@@ -2,11 +2,11 @@ library(data.table)
 library(dplyr)
 
 #Changing my directory
-setwd("/Users/myname/Downloads/UCI HAR Dataset") 
+setwd("/Users/myname/Downloads/UCI HAR Dataset") #Note that is important to extract the file into the UCI HAR Dataset folder.
 
 #Reaging suporting metadata
 featureNames <- read.table("features.txt")
-activityLabels <- read.table("activity_labels.txt", header = FALSE)
+activityLabels <- read.table("activity_labels.txt", header = FALSE) 
 
 #Reading training and testing data
 subjectTrain <- read.table("train/subject_train.txt", header = FALSE)
