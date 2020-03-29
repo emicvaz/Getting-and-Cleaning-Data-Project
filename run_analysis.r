@@ -1,6 +1,8 @@
 library(data.table)
 library(dplyr)
 
+#Changing my directory
+setwd("/Users/myname/Downloads/UCI HAR Dataset") 
 
 #Reaging suporting metadata
 featureNames <- read.table("features.txt")
